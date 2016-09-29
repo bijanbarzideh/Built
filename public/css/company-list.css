@@ -1,0 +1,77 @@
+html {
+}
+
+body {
+    background-color:#ccc;
+}
+
+.container
+{
+  background-color: #fff;
+}
+.container h1{
+      border-bottom: 10px solid #2c3e50;
+}
+
+hr{
+  border-top:none;
+}
+.company-logo{
+  max-width: 100px;
+  padding-right:5px;
+  padding-bottom:5px;
+}
+
+.connect
+{
+  margin: 10px 0px;
+}
+
+.social-icon
+{
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+.company-row{
+  margin-top:20px;
+}
+.company-row h4
+{
+  margin-bottom: 0px;
+  margin-top:0px;
+}
+
+.infoPoints li{
+  padding-left:0px;
+}
+p.description
+{
+  clear: both;
+  padding-top:5px;
+}
+#company-carousel .item{
+  margin: 3px;
+}
+#company-carousel .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#company-carousel2 .item{
+  margin: 3px;
+}
+#company-carousel2 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#company-carousel3 .item{
+  margin: 3px;
+}
+#company-carousel3 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+

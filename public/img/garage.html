@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>build page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Built</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="garage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="./owl.carousel/owl-carousel/owl.carousel.css">
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="./owl.carousel/owl-carousel/owl.theme.css">
+
+    <!-- Include js plugin -->
+    <script src="./owl.carousel/owl-carousel/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            var owl = $("#owl-demo");
+
+            owl.owlCarousel({
+                items: 10, //10 items above 1000px browser width
+                itemsDesktop: [1000, 5], //5 items between 1000px and 901px
+                itemsDesktopSmall: [900, 3], // betweem 900px and 601px
+                itemsTablet: [600, 2], //2 items between 600 and 0
+                itemsMobile: false // itemsMobile disabled - inherit from itemsTablet option
+            });
+
+            // Custom Navigation Events
+            $(".next").click(function() {
+                owl.trigger('owl.next');
+            })
+            $(".prev").click(function() {
+                owl.trigger('owl.prev');
+            })
+            $(".play").click(function() {
+                owl.trigger('owl.play', 1000); //owl.play event accept autoPlay speed as second parameter
+            })
+            $(".stop").click(function() {
+                owl.trigger('owl.stop');
+            })
+
+        });
+    </script>
+</head>
+
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-inverse navSelect">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Built</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">My Builds</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="profile-info">
+        <div class="media">
+            <h1>garage</h1>
+            <!-- <img src="hks-banner.png" class="img-responsive" alt="Responsive image"> -->
+        </div>
+    </section>
+
+    <section class="car1">
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Jeep</h1>
+                </div>
+                <ul class="list-inline lot-breakdown-list">
+
+                    <li>
+                        <h5>Engine : 3.6/316 HP</h5>
+                    </li>
+
+                    <li>
+                        <h5>Trans : 4-Speed</h5>
+                    </li>
+
+                    <li>
+                        <h5>Color : Slate Grey</h5>
+                    </li>
+
+                    <li>
+                        <h5>Interior : Black</h5>
+                    </li>
+                </ul>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="jeep1.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="jeep2.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="jeep3.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="jeep4.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="jeep5.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="jeep6.jpg" alt="">
+                </div>
+            </div>
+            <hr>
+    </section>
+
+    <<section class="car2">
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">BMW</h1>
+                </div>
+                <ul class="list-inline lot-breakdown-list">
+
+                    <li>
+                        <h5>Engine : 3.6/316 HP</h5>
+                    </li>
+
+                    <li>
+                        <h5>Trans : 4-Speed</h5>
+                    </li>
+
+                    <li>
+                        <h5>Color : Slate Grey</h5>
+                    </li>
+
+                    <li>
+                        <h5>Interior : Black</h5>
+                    </li>
+                </ul>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="bmw1.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="bmw2.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="bmw3.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="bmw4.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="bmw5.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="bmw6.jpg" alt="">
+                </div>
+            </div>
+            <hr>
+            </section>
+
+            <section class="car3">
+                <!-- Page Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="page-header">1980 Porsche 911BR</h1>
+                        </div>
+                        <ul class="list-inline lot-breakdown-list">
+
+                            <li>
+                                <h5>Engine : 3.6/316 HP</h5>
+                            </li>
+
+                            <li>
+                                <h5>Trans : 4-Speed</h5>
+                            </li>
+
+                            <li>
+                                <h5>Color : Slate Grey</h5>
+                            </li>
+
+                            <li>
+                                <h5>Interior : Black</h5>
+                            </li>
+                        </ul>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <img class="img-responsive" src="porsche1.jpg" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <img class="img-responsive" src="porsche2.jpg" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <img class="img-responsive" src="porsche3.jpg" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <img class="img-responsive" src="porsche4.jpg" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <img class="img-responsive" src="porsche5.jpg" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <img class="img-responsive" src="porsche6.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <hr>
+            </section>
+
+
+
+</body>
+
+</html>

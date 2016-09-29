@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'helvetica-neue';
+    src: url("../fonts/helvetica-neue-webfont.eot");
+    src: url("../fonts/helvetica-neue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica-neue-webfont.woff") format("woff"), url("../fonts/helvetica-neue-webfont.ttf") format("truetype"), url("../fonts/helvetica-neue-webfont.svg#helvetica_neue") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'good-times';
+    src: url("../fonts/good-times.eot");
+    src: url("../fonts/good-times.eot?#iefix") format("embedded-opentype"), url("../fonts/good-times.woff") format("woff"), url("../fonts/good-times.ttf") format("truetype"), url("../fonts/good-times.svg#good-times") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    font-family: 'helvetica-neue';
+    font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6, nav
+{
+    font-family: 'good-times';
+}
+
+/*NAV*/
+.navbar {
+    margin-bottom: 0px;
+    background-color: #2c3e50;
+    border-radius: 0px;
+   
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+.navbar-brand{
+    padding-top:7px;
+}
+.navbar-nav a.btn{
+    padding: 7px;
+    border-top-width: 1px;
+    margin-top: 5px;
+}

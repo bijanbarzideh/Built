@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="module.dashboard">
+
+<head>
+    <title>profile</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="/css/common.css"/>
+    <link rel="stylesheet" href="/css/profile.css">
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="/owl.carousel/owl-carousel/owl.carousel.css">
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="/owl.carousel/owl-carousel/owl.theme.css">
+</head>
+
+
+<body ng-controller="DashboardController as dashboard">
+
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/"><img src="/img/logo.png"/></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="/garage">Garage</a></li>
+                <li><a href="/company-list">Companies</a></li>
+                <li><a href="/logout" class="btn btn-sm btn-danger">Logout</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <div class="mediaBanner">
+      <img src="/img/e30-m3-wallpaper.png" class="img-responsive topLogo" alt="E30 M3">
+  </div>
+
+    <div class="container">
+      <div class="row content">
+        <div class="col-sm-3 profile-info-column column">
+          <div class="row">
+            <div class="col-xs-12">
+              <img id="ProfilePic" src="/img/bob.jpg">
+              <h3><%= user.name %></h3>
+              <ul class="nav nav-pills nav-stacked">
+                <li>Location: <%= user.location %></li>
+                <li>Age: <%= user.age %></li>
+              </ul>
+              <% if(user.facebookUrl){ %>
+                  <a target="_blank" title="follow me on facebook" href="<%= user.facebookUrl %>">
+                    <img alt="follow me on facebook" class="iconImg" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0>
+                  </a>
+                <%}%>
+                <% if(user.instagramUrl){ %>
+                  <a target="_blank" title="follow me on instagram" href="<%= user.instagramUrl %>">
+                    <img alt="follow me on instagram" class="iconImg" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0>
+                  </a>
+                <%}%>
+                <% if(user.twitterUrl){ %>
+                  <a target="_blank" title="follow me on Twitter" href="<%= user.twitterUrl %>">
+                    <img alt="follow me on Twitter" class="iconImg" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0>
+                  </a>
+                <%}%>
+                <a target="_blank" title="garage" href="/garage">
+                  <img alt="follow me on facebook" class="iconImg" src="/img/990-200.png" border=0>
+                </a>
+              </div>
+            </div>
+            <hr/>
+            <div class="row">
+              <div class="col-xs-12">
+                <h4>My Garage</h4>
+                <div id="GarageCarousel">
+                  <div class="item">
+                    <h6>FuguZ</h6>
+                    <p>1972 Datsun 240z</p>
+                    <img src="/img/fuguz1.jpg" class="img-responsive margin sideImg" alt="Image" /> 
+                  </div>
+                  <div class="item">
+                    <h6>Firebird</h6>
+                    <p>1973 Pontiac Firebird</p>
+                    <img src="/img/trans-am.jpg" class="img-responsive margin sideImg" alt="Image">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-9 column">
+          <h3>Build Feed</h3>
+          <div id="Feed">
+              <div class="post">
+                  <div class="post-header">
+                    <a href="/profile">
+                      <img class="user-image" src="/img/bob.jpg">
+                    </a>
+                    <div class="image-treatement"></div>
+                    <h4 class="user-name"><%=user.name%></h4>
+                    <time>Tuesday August 30<sup>th</sup>, 2016 11:00 PM</time>
+                  </div>
+                  <div class="post-body">
+                    <p>This car came at a time when there was a lot of crazy stuff happening in the motorsport world, and for how cool the M1 street car looked, its racing counterpart was so much cooler. And that’s precisely what this car is, a Procar. And not only are the guys at Canepa just finishing up its restoration, they’re also making it street legal. How cool is that?!</p>
+                    <img class="img-responsive" src="/img/canepa-m1.jpg" />
+                  </div>
+              </div>
+
+              <div class="post">
+                  <div class="post-header">
+                    <a href="/profile">
+                      <img class="user-image" src="/img/bob.jpg">
+                    </a>
+                    <div class="image-treatement"></div>
+                    <h4 class="user-name"><%=user.name%></h4>
+                    <time>Tuesday August 30<sup>th</sup>, 2016 10:30 PM</time>
+                  </div>
+                  <div class="post-body">
+                    <p>The Giugiaro-designed M1 was powered by a mechanically fuel injected M88, a screaming 3.5L straight-six that sits in full display in midship position.</p>
+                    <img class="img-responsive" src="/img/canepa-m1-2.jpg" />
+                  </div>
+              </div>
+
+              <div class="post">
+                  <div class="post-header">
+                    <a href="/profile">
+                      <img class="user-image" src="/img/bob.jpg">
+                    </a>
+                    <div class="image-treatement"></div>
+                    <h4 class="user-name"><%=user.name%></h4>
+                    <time>Tuesday August 30<sup>th</sup>, 2016 10:15 PM</time>
+                  </div>
+                  <div class="post-body">
+                    <p>The street version of the M88 developed somewhere in the region of 277hp, while turbocharged race versions were rated up to 850hp. </p>
+                    <img class="img-responsive" src="/img/canepa-m1-3.jpg" />
+                  </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="/js/module.dashboard.js"></script>
+    <script src="/owl.carousel/owl-carousel/owl.carousel.js"></script>
+    <script>
+        $(function() {
+            $("#GarageCarousel").owlCarousel({
+                autoPlay: 2000, //Set AutoPlay to 3 seconds
+                items: 1,
+                itemsDesktop: [1199, 1],
+                itemsTablet:	[768,1],
+                itemsDesktopSmall: [979, 1]
+            });
+        });
+    </script>
+</body>
+
+</html>
